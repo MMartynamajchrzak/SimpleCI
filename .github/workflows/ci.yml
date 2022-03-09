@@ -14,4 +14,4 @@ jobs:
       - name: Set up Python 3
         uses: actions/setup-python@v3
       - name: Install deps
-        run: pip3 install -r requirements.txt
+        run: pip3 install -r requirements.txt; pip3 install -r test_requirements.txt

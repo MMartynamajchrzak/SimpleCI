@@ -6,14 +6,15 @@ from flask import request
 moje_imie = "Natalia"
 msg = "Hello World!"
 
-@app.route('/')
+
+@app.route("/")
 def index():
-    output = request.args.get('output')
+    output = request.args.get("output")
     if not output:
         output = PLAIN
-    return get_formatted(msg, moje_imie,
-                         output.lower())
+    return get_formatted(msg, moje_imie, output.lower())
 
-@app.route('/outputs')
+
+@app.route("/outputs")
 def supported_output():
     return ", ".join(SUPPORTED)
