@@ -43,8 +43,3 @@
    ```bash
    flake8 hello_world test main.py
    ```
-
-5. Place for your notes:
-
-   ```bash
-   ```
